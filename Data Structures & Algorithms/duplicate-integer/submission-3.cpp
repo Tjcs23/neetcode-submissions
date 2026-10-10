@@ -1,0 +1,12 @@
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        for (int i = 0; i < nums.size(); i++) {
+            cout << count(nums.begin(), nums.end(), nums[i]);
+            if (count(nums.begin(), nums.end(), nums[i]) > 1) {
+                return true;
+            } 
+        }
+        return false;
+    }
+};
